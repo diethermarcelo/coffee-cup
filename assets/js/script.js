@@ -20,6 +20,8 @@ let burger_close = document.querySelector('.burger-navs .close');
 let burger_icon = document.querySelector('.burger-container .burger-icon');
 let burger_navs = document.querySelector('.burger-navs');
 
+let burger_navs_classes = burger_navs.classList;
+
 burger_close.addEventListener('click', () => {
     burger_navs.classList.add('opacity-0');
     burger_navs.classList.remove('opacity-1');
