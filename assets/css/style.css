@@ -75,6 +75,7 @@ body {
     margin: 0;
     padding: 0;
     background: var(--gray);
+    /* overflow-x: hidden; */
 }
 
 button {
@@ -405,6 +406,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .burger-container .burger-icon {
+    top: 0;
     width: 100%;
     z-index: 10;
     padding: 10px;
@@ -426,17 +428,18 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background: var(--blue);
     z-index: 10;
     transition: .2s all;
+    overflow: hidden;
 }
 
 .burger-navs nav {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -459,7 +462,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .burger-navs *{
     color: var(--white);
-    font-size: var(--big-regular-font);
+    font-size: var(--medium-font);
     font-family: 'RobotoRegular'
 }
 
@@ -512,6 +515,7 @@ header #nav-container .logo span{
 
 /* Sections */
 .main-sections {
+    overflow-x: hidden;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -804,7 +808,11 @@ footer .social-media img{
     .md-flex-start {
         justify-content: flex-start;
     }
-    
+
+    .md-px-4{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 
     .md-flex-align-center {
 
